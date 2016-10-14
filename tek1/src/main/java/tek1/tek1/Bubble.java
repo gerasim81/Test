@@ -1,7 +1,7 @@
 package tek1.tek1;
 
 public class Bubble {
-	public int[] sortBubble(int[] arrayToSort) {//puzirkovaya sortirovka
+	public int[] sortBubble(int[] arrayToSort) {//сортировка пузырьком
 		int temp;
 		if (arrayToSort.length == 0) return arrayToSort;
 		for (int i =0; i < arrayToSort.length;i++){
