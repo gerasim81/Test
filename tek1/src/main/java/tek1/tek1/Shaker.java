@@ -1,18 +1,18 @@
 package tek1.tek1;
 
 public class Shaker {
-	public int[] sortShaker(int[] arrayToSort) {//sheikernaya sortirovka
+	public int[] sortShaker(int[] arrayToSort) {//сортировка шейкером
 		int temp;
-		int counter1=0;//schetchk dlua maksimumov
-		int counter2=0;//schetchk dlua minimumov
-		int reverseFlag=0;// 0 - vpered, 1 - nazad
-		int fullArrayCounter=0;//schetchik prohodov
+		int counter1=0;
+		int counter2=0;
+		int reverseFlag=0;
+		int fullArrayCounter=0;
 		if (arrayToSort.length == 0) return arrayToSort;
 		while(true){
-			if (fullArrayCounter % 2 == 1) reverseFlag = 1;//idem vverh
-			else reverseFlag = 0;//idem vniz
+			if (fullArrayCounter % 2 == 1) reverseFlag = 1;
+			else reverseFlag = 0;
 
-			if (reverseFlag == 0){ //tolkaem vniz maksimumi
+			if (reverseFlag == 0){
 				for(int i = counter1; i < arrayToSort.length-counter1-1;i++){
 					if (arrayToSort[i] > arrayToSort[i+1]){
 						temp = arrayToSort[i+1];
@@ -22,7 +22,7 @@ public class Shaker {
 				}
 				counter1++;
 			}
-			else{//tolkaem vverh minimumi
+			else{
 				for(int i = arrayToSort.length-counter2-2; i > counter2; i--){
 					if (arrayToSort[i] < arrayToSort[i-1]){
 						temp = arrayToSort[i-1];
