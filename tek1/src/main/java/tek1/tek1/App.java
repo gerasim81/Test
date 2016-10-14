@@ -13,8 +13,8 @@ public class App
 
 		int razmer = random.nextInt(999);
 
-		int [] array1 = new int[razmer];//выделяем память для массива
-		int [] array2 = new int[razmer];//выделяем память для массива
+		int [] array1 = new int[razmer];
+		int [] array2 = new int[razmer];
 
 
 		for (int i =0; i < array1.length;i++){
