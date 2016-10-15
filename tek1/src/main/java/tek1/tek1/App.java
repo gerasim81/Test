@@ -28,7 +28,7 @@ public class App
 			array2[i]= random.nextInt(999);
 		}
 
-		random = null;//
+		//random = null;//
 				
 		System.out.println("Исходный массив:");
 		for (int dig1 : array1){
