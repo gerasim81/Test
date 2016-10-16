@@ -2,7 +2,7 @@ package tek1.tek1;
 
 import java.util.Random;
 
-public class App 
+public class Sort 
 {
 	public static void main( String[] args )
 	{
